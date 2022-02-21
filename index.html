@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="http://fonts.cdnfonts.com/css/feeling-passionate"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100&display=swap"
+      rel="stylesheet"
+    />
+
+     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+    <script src="./firebase.js"></script>
+
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <div class="background-image">
+      <img src="assets/banner.svg" />
+    </div>
+    <div class="container">
+      <div class="header">
+        <div class="title">to do list</div>
+        <div class="theme">
+          <img src="https://img.icons8.com/carbon-copy/40/000000/sun--v1.png" />
+        </div>
+      </div>
+      <div class="new-todo">
+        <div class="check">
+          <div class="check-mark"></div>
+        </div>
+        <div class="new-todo-input">
+          <form onsubmit="addItem(event)">
+            <input
+              id="todo-input"
+              type="text"
+              placeholder="Create a new to do..."
+            />
+          </form>
+        </div>
+      </div>
+      <div class="todo-item-wrapper">
+        <div class="todo-items">
+          <div class="todo-item">
+            <div class="check">
+              <div class="check-mark">
+                <img
+                  src="https://img.icons8.com/external-becris-lineal-becris/20/000000/external-check-mintab-for-ios-becris-lineal-becris-1.png"
+                />
+              </div>
+            </div>
+            <div class="todo-text">Make Coffee</div>
+        </div>
+
+                  <div class="todo-item">
+            <div class="check">
+              <div class="check-mark">
+                <img
+                  src="https://img.icons8.com/external-becris-lineal-becris/20/000000/external-check-mintab-for-ios-becris-lineal-becris-1.png"
+                />
+              </div>
+            </div>
+            <div class="todo-text">Make Coffee</div>
+        </div>
+
+
+                  <div class="todo-item">
+            <div class="check">
+              <div class="check-mark">
+                <img
+                  src="https://img.icons8.com/external-becris-lineal-becris/20/000000/external-check-mintab-for-ios-becris-lineal-becris-1.png"
+                />
+              </div>
+            </div>
+            <div class="todo-text">Make Coffee</div>
+        </div>
+
+
+        <div class="todo-items-info">
+          <div class="items-left">
+            5 Items left
+          </div>
+          <div class="items-statuses">
+            <span class="active">All</span>
+            <span>Active</span>
+            <span>Completed</span>
+          </div>
+          <div class="items-clear">
+            <span>Clear Completed</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    </body>
+  </body>
+</html>
